@@ -53,9 +53,7 @@ SEED                | +ntb_random_seed=2 | the seed used in the simulation
 PARALLEL_SIMS       | 5                  | the number of parallel simulations to run
 UVM_VERBOSITY       | UVM_LOW            | the verbosity of the UVM log
 MAX_RAND_SIM_COUNT  | 10                 | Maximum number of Random Simulations before updating constraints
-ML_ENABLED          | 0                  | Enable for Machine Learning Algorithm to optimize Constrained Random Simulations
-                    |                    | ML_ENABLED=1 for Linear Regression Model;
-                    |                    | ML_ENABLED=2 for Deep Neural Networks (DNN);
+ML_ENABLED          | 0                  | Enable for Machine Learning Algorithm to optimize Constrained Random Simulations; ML_ENABLED=1 for Linear Regression Model; ML_ENABLED=2 for Deep Neural Networks (DNN);
 FSM_OPT_ENABLE      | 0                  | Enable if Design has an FSM, to enable optimization of ENV for Sequential Designs
 
 # Examples
