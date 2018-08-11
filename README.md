@@ -4,7 +4,7 @@ Constrained random simulations play a critical role in Design Verification today
 
 # Background
 
-This repository is the example code referenced in the thesis publication "Optimization of Constrained Random Verification using Machine Learning" by Sarath Mohan Ambalakkat (University of Minnesota, Twin Cities) 
+This repository is the example code presenting the implementation of the proposed method in the thesis publication "Optimization of Constrained Random Verification using Machine Learning" by Sarath Mohan Ambalakkat (ambal006@umn.edu, University of Minnesota, Twin Cities) 
 
 # Getting Started
 
@@ -83,4 +83,5 @@ The above will run a parallel simulation that will coordinate with a TCL server 
 2. TCL library, "math" used.  
 
 2. This code was developed and tested with VCS 2016.06 on 64 bit Linux. Patches to port to other simulators are accepted. The concepts should be implementable on current SystemVerilog simulators.
+
 
