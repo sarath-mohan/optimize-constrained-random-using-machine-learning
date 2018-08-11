@@ -4,7 +4,7 @@ Constrained random simulations play a critical role in Design Verification today
 
 # Background
 
-This repository is the example code presenting the implementation of the proposed method in the thesis publication "Optimization of Constrained Random Verification using Machine Learning" by Sarath Mohan Ambalakkat (ambal006@umn.edu, University of Minnesota, Twin Cities) 
+This repository is the example code presenting the implementation of the proposed method in the thesis publication "Optimization of Constrained Random Verification using Machine Learning Algorithms" by Sarath Mohan Ambalakkat (ambal006@umn.edu, University of Minnesota, Twin Cities) 
 
 # Getting Started
 
