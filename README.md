@@ -53,7 +53,7 @@ SEED                | +ntb_random_seed=2 | the seed used in the simulation
 PARALLEL_SIMS       | 5                  | the number of parallel simulations to run
 UVM_VERBOSITY       | UVM_LOW            | the verbosity of the UVM log
 MAX_RAND_SIM_COUNT  | 10                 | Maximum number of Random Simulations before updating constraints
-ML_ENABLED          | 0                  | Enable for Machine Learning Algorithm to optimize Constrained Random Simulations; ML_ENABLED=1 for Linear Regression Model; ML_ENABLED=2 for Deep Neural Networks (DNN);
+ML_ENABLED          | 0                  | Enable for Machine Learning Algorithm to optimize Constrained Random Simulations; ML_ENABLED=1 for Linear Regression Model; ML_ENABLED=2 for Artificial Neural Networks (ANN);
 FSM_OPT_ENABLE      | 0                  | Enable if Design has an FSM, to enable optimization of ENV for Sequential Designs
 
 # Examples
@@ -65,16 +65,12 @@ FSM_OPT_ENABLE      | 0                  | Enable if Design has an FSM, to enabl
 The above will build and run a local simulation with a DUT with both inputs being 3 bits each. It will iterate on the simulation until it finds the combination of inputs that satisfy the "Objective Function". The resultant "replicate" file will allow for an efficient rerun.
 
 ```
-> make sim_synopsys_reload
+> make synopsys ML_ENABLED=2
 ```
 
-The above will run a local simulation using a file named "replicate" in the git repo root to run an efficent rerun from a pervious run.
+The above will run a local simulation with the optimisation algorithm implementing Artificial Neural Networks for optimizing the constrained random simulations.
 
-```
-> make -j5 sim_synopsys_parallel SERVER=127.0.0.1 PARALLEL_SIMS=5
-```
 
-The above will run a parallel simulation that will coordinate with a TCL server on localhost on port 9000. It will launch 5 parallel cooperating simulations.
 
 # Requirements
 
